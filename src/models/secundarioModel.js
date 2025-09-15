@@ -7,31 +7,31 @@ const getAllSecundario = async () => {
 };
 
 const getSecundarioById = async (id) => {
-    const result = await pool.query('SELECT * FROM secundarios WHERE id = ?', [id]);
+    const result = await pool.query('SELECT * FROM secundario WHERE id = $1', [id]);
     return result.rows[0];
-}
+};
 
 const createSecundario = async (secundario) => {
-    const { nome, papel, status, origem, descricao } = secundario;
+    const { nome, papel, status, origem, descricao, imagem } = secundario;
     const result = await pool.query(
-        'INSERT INTO secundarios (nome, papel, status, origem, descricao) VALUES (?, ?, ?, ?, ?)',
-        [nome, papel, status, origem, descricao]
+        'INSERT INTO secundario (nome, papel, status, origem, descricao, imagem) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *',
+        [nome, papel, status, origem, descricao, imagem]
     );
-    return { id: result.insertId, ...secundario };
-}
+    return result.rows[0];
+};
 
 const updateSecundario = async (id, secundario) => {
-    const { nome, papel, status, origem, descricao } = secundario;
-    await pool.query(
-        'UPDATE secundarios SET nome = ?, papel = ?, status = ?, origem = ?, descricao = ? WHERE id = ?',
-        [nome, papel, status, origem, descricao, id]
+    const { nome, papel, status, origem, descricao, imagem } = secundario;
+    const result = await pool.query(
+        'UPDATE secundario SET nome = $1, papel = $2, status = $3, origem = $4, descricao = $5, imagem = $6 WHERE id = $7 RETURNING *',
+        [nome, papel, status, origem, descricao, imagem, id]
     );
-    return { id, ...secundario };
-}
+    return result.rows[0];
+};
 
 const deleteSecundario = async (id) => {
-    await pool.query('DELETE FROM secundarios WHERE id = ?', [id]);
-}
+    await pool.query('DELETE FROM secundario WHERE id = $1', [id]);
+};
 
 module.exports = {
     getAllSecundario,
