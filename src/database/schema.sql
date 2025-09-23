@@ -6,7 +6,7 @@ CREATE TABLE principal (
     papel VARCHAR(50) NOT NULL,
     status VARCHAR(50) NOT NULL,
     origem VARCHAR(150),
-    imagem VARCHAR(255),
+    imagem TEXT,
     descricao TEXT
 );
 
@@ -16,7 +16,7 @@ CREATE TABLE secundario (
     papel VARCHAR(50) NOT NULL,
     status VARCHAR(50) NOT NULL,
     origem VARCHAR(150),
-    imagem VARCHAR(255),
+    imagem TEXT,
     descricao TEXT
 );
 
@@ -41,25 +41,28 @@ INSERT INTO principal (nome, papel, status, origem, descricao, imagem) VALUES
 ('Lev', 'Aliado', 'Vivo', 'Ilha dos Serafitas', 'Jovem serafita que abandona seu culto e se torna um companheiro inseparável de Abby', 'https://static.wikia.nocookie.net/thelastofus/images/a/a3/Part_II_Lev_infobox.png/revision/latest?cb=20230215214140'),
 ('Bill', 'Aliado', 'Vivo', 'Lincoln, Massachusetts', 'Sobrevivente habilidoso e paranoico que ajudou Joel e Ellie no início da jornada', 'https://static.wikia.nocookie.net/thelastofus/images/2/2f/Part_I_Bill_infobox.png/revision/latest?cb=20230215182523'),
 ('Henry', 'Aliado', 'Morto', 'Hartford, Connecticut', 'Homem que fez de tudo para proteger seu irmão mais novo, Sam, durante a jornada', 'https://static.wikia.nocookie.net/thelastofus/images/b/b3/Part_I_Henry_infobox.png/revision/latest?cb=20230216023402'),
-('David', 'Antagonista', 'Morto', 'Silver Lake, Colorado', 'Líder carismático de um grupo de canibais que se torna uma grande ameaça para Ellie', 'https://static.wikia.nocookie.net/thelastofus/images/3/3c/Part_I_David_infobox.png/revision/latest?cb=20230222041515');
+('David', 'Antagonista', 'Morto', 'Silver Lake, Colorado', 'Líder carismático de um grupo de canibais que se torna uma grande ameaça para Ellie', 'https://static.wikia.nocookie.net/thelastofus/images/3/3c/Part_I_David_infobox.png/revision/latest?cb=20230222041515'),
+('JJ', 'Filho de Dina e Jesse', 'Vivo', 'Jackson, Wyoming', 'Filho de Dina e Jesse e figura central na vida de Ellie, representando a esperança e a vida normal que ela luta para manter', 'https://static.wikia.nocookie.net/thelastofus/images/f/fc/Part_II_JJ_infobox.png/revision/latest?cb=20230215213731');
 
 
 INSERT INTO secundario (nome, papel, status, origem, descricao, imagem) VALUES
 ('Sam', 'Aliado', 'Morto', 'Hartford, Connecticut', 'Irmão mais novo de Henry, surdo, cuja morte trágica impacta profundamente os protagonistas', 'https://static.wikia.nocookie.net/thelastofus/images/f/f8/Part_I_Sam_infobox.png/revision/latest?cb=20230216023425'),
-('Maria Miller', 'Líder de Comunidade', 'Viva', 'Jackson, Wyoming', 'Esposa de Tommy e uma das líderes do conselho que governa a comunidade de Jackson', 'maria.jpg'),
-('Owen Moore', 'Membro da WLF', 'Morto', 'Salt Lake City (ex-Vagalume)', 'Soldado idealista e ex-namorado de Abby, parte central de seu grupo de amigos', 'owen.jpg'),
-('Mel', 'Membro da WLF', 'Morta', 'Salt Lake City (ex-Vagalume)', 'Médica da WLF e parceira de Owen, estava grávida durante os eventos em Seattle', 'mel.jpg'),
-('Manny Alvarez', 'Membro da WLF', 'Morto', 'Salt Lake City (ex-Vagalume)', 'Soldado leal e melhor amigo de Abby, servindo como seu braço direito na WLF', 'manny.jpg'),
-('Yara', 'Aliada', 'Morta', 'Ilha dos Serafitas', 'Irmã mais velha de Lev, uma serafita exilada que se alia a Abby para proteger seu irmão', 'yara.jpg'),
-('Isaac Dixon', 'Líder da WLF', 'Morto', 'Seattle, Washington', 'Líder implacável da Frente de Libertação de Washington (WLF) em guerra com os Serafitas', 'isaac.jpg'),
-('Frank', 'Parceiro de Bill', 'Morto', 'Lincoln, Massachusetts', 'Parceiro de Bill por muitos anos, cuja nota de suicídio revela a profundidade de sua relação', 'frank.jpg'),
-('Riley Abel', 'Amiga de Ellie', 'Morta', 'Zona de Quarentena de Boston', 'Melhor amiga de Ellie e seu primeiro interesse amoroso, cuja morte revela a imunidade de Ellie (DLC Left Behind)', 'riley.jpg'),
-('Sarah Miller', 'Filha de Joel', 'Morta', 'Austin, Texas', 'Filha de Joel, cuja morte no início do surto moldou profundamente sua personalidade', 'https://static.wikia.nocookie.net/thelastofus/images/0/0b/Sarah_Part_I_infobox.png/revision/latest?cb=20230815204341');
+('Maria Miller', 'Líder de Comunidade', 'Viva', 'Jackson, Wyoming', 'Esposa de Tommy e uma das líderes do conselho que governa a comunidade de Jackson', 'https://static.wikia.nocookie.net/thelastofus/images/5/51/Part_II_Maria_infobox.png/revision/latest?cb=20230215213745'),
+('Owen Moore', 'Membro da WLF', 'Morto', 'Salt Lake City (ex-Vagalume)', 'Soldado idealista e ex-namorado de Abby, parte central de seu grupo de amigos', 'https://static.wikia.nocookie.net/thelastofus/images/6/67/Part_II_Owen_infobox.png/revision/latest?cb=20230215214107'),
+('Mel', 'Membro da WLF', 'Morta', 'Salt Lake City (ex-Vagalume)', 'Médica da WLF e parceira de Owen, estava grávida durante os eventos em Seattle', 'https://static.wikia.nocookie.net/thelastofus/images/0/02/Part_II_Mel_infobox.png/revision/latest?cb=20230215214032'),
+('Manny Alvarez', 'Membro da WLF', 'Morto', 'Salt Lake City (ex-Vagalume)', 'Soldado leal e melhor amigo de Abby, servindo como seu braço direito na WLF', 'https://static.wikia.nocookie.net/thelastofus/images/1/10/Part_II_Manny_infobox.png/revision/latest?cb=20230215214121'),
+('Yara', 'Aliada', 'Morta', 'Ilha dos Serafitas', 'Irmã mais velha de Lev, uma serafita exilada que se alia a Abby para proteger seu irmão', 'https://static.wikia.nocookie.net/thelastofus/images/b/b0/Part_II_Yara_infobox.png/revision/latest?cb=20230215214047'),
+('Isaac Dixon', 'Líder da WLF', 'Morto', 'Seattle, Washington', 'Líder implacável da Frente de Libertação de Washington (WLF) em guerra com os Serafitas', 'https://static.wikia.nocookie.net/thelastofus/images/2/21/Part_II_Isaac_infobox.png/revision/latest?cb=20230215213903'),
+('Frank', 'Parceiro de Bill', 'Morto', 'Lincoln, Massachusetts', 'Parceiro de Bill por muitos anos, cuja nota de suicídio revela a profundidade de sua relação', 'https://static.wikia.nocookie.net/thelastofus/images/9/92/Frank%27s_corpse.jpeg/revision/latest?cb=20160517002804'),
+('Riley Abel', 'Amiga de Ellie', 'Morta', 'Zona de Quarentena de Boston', 'Melhor amiga de Ellie e seu primeiro interesse amoroso, cuja morte revela a imunidade de Ellie (DLC Left Behind)', 'https://static.wikia.nocookie.net/thelastofus/images/c/c8/Part_I_Riley_infobox.png/revision/latest?cb=20230222234744'),
+('Sarah Miller', 'Filha de Joel', 'Morta', 'Austin, Texas', 'Filha de Joel, cuja morte no início do surto moldou profundamente sua personalidade', 'https://static.wikia.nocookie.net/thelastofus/images/0/0b/Sarah_Part_I_infobox.png/revision/latest?cb=20230815204341'),
+('Nora Harris', 'Membro da WLF', 'Morta', 'Salt Lake City (ex-Vagalume)', 'Médica e amiga de Abby, interrogada por Ellie em um momento crucial da busca por vingança', 'https://static.wikia.nocookie.net/thelastofus/images/d/d9/Part_II_Nora_infobox.png/revision/latest?cb=20230215214017'),
+('Jerry Anderson', 'Cirurgião dos Vagalumes', 'Morto', 'Salt Lake City, Utah', 'Pai de Abby e o cirurgião chefe dos Vagalumes que foi morto por Joel ao tentar criar uma cura a partir da imunidade de Ellie', 'https://static.wikia.nocookie.net/thelastofus/images/1/1f/Part_II_Jerry_infobox.png/revision/latest?cb=20230215213838');
 
 INSERT INTO infectados (nome, descricao, origem, comportamento_tipico, imagem) VALUES
-('Runner', 'Estágio inicial: mais humano, rápido e agressivo', 'Áreas urbanas abandonadas', 'Persegue alvos por visão e som, age em pequenos grupos', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nme.com%2Fguides%2Fgaming-guides%2Fthe-last-of-us-zombie-types-3854070&psig=AOvVaw2WBszGVtfaHlKEHpm5QRtq&ust=1758720938978000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIiblY6A748DFQAAAAAdAAAAABAL' ),
-('Stalker', 'Estágio intermediário: parcialmente deformado, ainda enxerga', 'Locais úmidos e escuros', 'Se esconde, embosca alvos, comportamento furtivo', 'https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.game-art-hq.com%2F113224%2Fthe-infected-stalkers-from-the-last-of-us-in-the-ga-hq-video-game-character-db%2F&psig=AOvVaw1dRGC6aPBt3Da1QdHa17PL&ust=1758721066834000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMiHjtGA748DFQAAAAAdAAAAABBH'),
-('Clicker', 'Estágio avançado: face destruída por fungos, cego', 'Ambientes escuros e fechados', 'Usa ecolocalização, ataques letais de curta distância', 'https://static.wikia.nocookie.net/thelastofus/images/5/54/Clicker_model_Part_II.png/revision/latest?cb=20200713122641https://static.wikia.nocookie.net/thelastofus/images/5/54/Clicker_model_Part_II.png/revision/latest?cb=20200713122641'),
-('Bloater', 'Estágio extremo: corpo coberto por crescimento fúngico pesado', 'Instalações e áreas com infestação antiga', 'Muito resistente, ataques lentos e poderosos', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fscreenrant.com%2Feasy-kill-bloater-last-of-us%2F&psig=AOvVaw2pQK8E8k-f4g3ZxmjnLJoH&ust=1758721190570000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLjn4vKB748DFQAAAAAdAAAAABBJ'),
+('Runner', 'Estágio inicial: mais humano, rápido e agressivo', 'Áreas urbanas abandonadas', 'Persegue alvos por visão e som, age em pequenos grupos', 'https://static.wikia.nocookie.net/thelastofus/images/7/72/Runner_models.png/revision/latest?cb=20200711175107' ),
+('Stalker', 'Estágio intermediário: parcialmente deformado, ainda enxerga', 'Locais úmidos e escuros', 'Se esconde, embosca alvos, comportamento furtivo', 'https://static.wikia.nocookie.net/thelastofus/images/b/b1/Stalker_models.png/revision/latest?cb=20200711175035'),
+('Clicker', 'Estágio avançado: face destruída por fungos, cego', 'Ambientes escuros e fechados', 'Usa ecolocalização, ataques letais de curta distância', 'https://static.wikia.nocookie.net/thelastofus/images/5/54/Clicker_model_Part_II.png/revision/latest?cb=20200713122641'),
+('Bloater', 'Estágio extremo: corpo coberto por crescimento fúngico pesado', 'Instalações e áreas com infestação antiga', 'Muito resistente, ataques lentos e poderosos', 'https://static.wikia.nocookie.net/thelastofus/images/2/24/Bloater_Part_II_model.png/revision/latest?cb=20200713122711'),
 ('Shambler', 'Variação do Bloater: corpo inchado e inflamável', 'Regiões úmidas e altamente infestadas', 'Expele nuvens de ácido, ataque de área, lento mas perigoso', 'https://static.wikia.nocookie.net/thelastofus/images/9/90/Shambler_Part_II_model.png/revision/latest?cb=20200713122614'),
-('Rat King', 'Mutação rara: fusão de múltiplos infectados em um só corpo', 'Hospitais abandonados com infestação prolongada', 'Extremamente resistente, múltiplos padrões de ataque, comportamento imprevisível', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fthelastofus.fandom.com%2Fwiki%2FRat_king&psig=AOvVaw3djualGUMDyORdgzvW6bqV&ust=1758721609143000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPC9_t-C748DFQAAAAAdAAAAABAv');
+('Rat King', 'Mutação rara: fusão de múltiplos infectados em um só corpo', 'Hospitais abandonados com infestação prolongada', 'Extremamente resistente, múltiplos padrões de ataque, comportamento imprevisível', 'https://static.wikia.nocookie.net/thelastofus/images/d/dc/Rat_King_model.png/revision/latest?cb=20200711175135');
