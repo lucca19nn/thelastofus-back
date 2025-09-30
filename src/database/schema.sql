@@ -29,6 +29,13 @@ CREATE TABLE infectados (
     comportamento_tipico TEXT
 );
 
+CREATE TABLE locais (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    imagem TEXT
+)
+
 INSERT INTO principal (nome, papel, status, origem, descricao, imagem) VALUES
 ('Ellie Williams', 'Protagonista', 'Viva', 'Zona de Quarentena de Boston', 'Jovem imune que se torna uma sobrevivente implacável em busca de vingança', 'https://static.wikia.nocookie.net/thelastofus/images/3/34/Part_II_Ellie_infobox.png/revision/latest?cb=20250711183842'),
 ('Joel Miller', 'Protagonista', 'Morto', 'Austin, Texas', 'Sobrevivente que encontrou um propósito ao proteger Ellie, cujo passado o alcançou em Jackson', 'https://static.wikia.nocookie.net/thelastofus/images/a/af/Part_II_Joel_infobox.png/revision/latest?cb=20230215221156'),
@@ -66,3 +73,23 @@ INSERT INTO infectados (nome, descricao, origem, comportamento_tipico, imagem) V
 ('Bloater', 'Estágio extremo: corpo coberto por crescimento fúngico pesado', 'Instalações e áreas com infestação antiga', 'Muito resistente, ataques lentos e poderosos', 'https://static.wikia.nocookie.net/thelastofus/images/2/24/Bloater_Part_II_model.png/revision/latest?cb=20200713122711'),
 ('Shambler', 'Variação do Bloater: corpo inchado e inflamável', 'Regiões úmidas e altamente infestadas', 'Expele nuvens de ácido, ataque de área, lento mas perigoso', 'https://static.wikia.nocookie.net/thelastofus/images/9/90/Shambler_Part_II_model.png/revision/latest?cb=20200713122614'),
 ('Rat King', 'Mutação rara: fusão de múltiplos infectados em um só corpo', 'Hospitais abandonados com infestação prolongada', 'Extremamente resistente, múltiplos padrões de ataque, comportamento imprevisível', 'https://static.wikia.nocookie.net/thelastofus/images/d/dc/Rat_King_model.png/revision/latest?cb=20200711175135');
+
+INSERT INTO locais (nome, descricao, imagem) VALUES
+('Zona de Quarentena de Boston', 'Área fortificada onde Joel e Tess vivem no início do surto, cheia de patrulhas militares e regras rígidas.', 'https://static.wikia.nocookie.net/thelastofus/images/3/3b/TLOU_boston.png/revision/latest?cb=20130105223142'),
+('Capitólio de Boston', 'Edifício icônico e ponto de encontro com Marlene, onde os Vagalumes tinham uma base. O local está em ruínas e infestado.', 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88d5b237-3085-43b6-a9a4-f0c8a554ccd9/dflwy98-a8ca4b15-8cb2-4a9a-9680-79dde62a3546.jpg/v1/fill/w_1192,h_670,q_70,strp/the_last_of_us_part_i___capitol_entrance_by_mrodex_dflwy98-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvODhkNWIyMzctMzA4NS00M2I2LWE5YTQtZjBjOGE1NTRjY2Q5XC9kZmx3eTk4LWE4Y2E0YjE1LThjYjItNGE5YS05NjgwLTc5ZGRlNjJhMzU0Ni5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.HdhuOqLOy0aQNyLyYXIQ8AKimmMIt6up6OKer0TdzIY'),
+('Lincoln, Massachusetts', 'Cidade onde Bill vive sozinho, repleta de armadilhas engenhosas e defesas improvisadas contra infectados e saqueadores.', 'https://static.wikia.nocookie.net/thelastofus/images/d/df/Amherst_County_Temporary_QZ.jpg/revision/latest/scale-to-width-down/1000?cb=20220911233558'),
+
+('Pittsburgh, Pensilvânia', 'Cidade dominada por caçadores hostis após a queda da autoridade militar. É um cenário de emboscadas e perigos constantes.', ''),
+('Represa Hidrelétrica de Tommy', 'Localização no Condado de Jackson onde Tommy e sua comunidade se estabeleceram, gerando energia e vivendo em segurança.', ''),
+('Universidade do Leste do Colorado', 'Campus abandonado onde Joel e Ellie procuram os Vagalumes. O local se tornou um ninho de infectados e palco de um confronto brutal.', 'https://static.wikia.nocookie.net/thelastofus/images/e/e4/Go_Bighorns.png/revision/latest?cb=20230410214842'),
+('Lakeside Resort (Silver Lake)', 'Comunidade liderada pelo canibal David. Um resort de inverno que esconde uma sociedade sombria e perigosa.', 'https://static.wikia.nocookie.net/thelastofus/images/1/13/Lakeside_Resort.png/revision/latest?cb=20230417215905'),
+('Salt Lake City, Utah', 'Base final dos Vagalumes, onde se encontra o Hospital Saint Mary. É o clímax da jornada de Joel e Ellie no primeiro jogo.', 'https://static.wikia.nocookie.net/thelastofus/images/e/e3/Salt_Lake_City.png/revision/latest?cb=20200711175305'),
+('Liberty Gardens Mall (Left Behind)', 'Shopping abandonado em Boston explorado por Ellie e Riley na DLC "Left Behind", cheio de memórias e perigos.', 'https://static.wikia.nocookie.net/thelastofus/images/1/1e/Liberty_Gardens_concept_art.jpg/revision/latest?cb=20140728230143'),
+('Jackson, Wyoming', 'Comunidade próspera e fortificada liderada por Tommy e Maria, oferecendo um refúgio seguro em meio a um mundo pós-apocalíptico.', 'https://static.wikia.nocookie.net/thelastofus/images/6/6e/Jackson_Town.png/revision/latest?cb=20200711175325'),
+('Seattle, Washington - Centro', 'Vasta área devastada pela guerra entre a WLF (Frente de Libertação de Washington) e os Serafitas (Scars), cheia de ruínas e perigos.', 'https://static.wikia.nocookie.net/thelastofus/images/5/5b/Seattle_City.png/revision/latest?cb=20200711175345'),
+('Bairro Hillcrest, Seattle', 'Área residencial suburbana em Seattle, com casas, lojas e uma forte presença de infectados e patrulhas da WLF.', 'https://static.wikia.nocookie.net/thelastofus/images/2/23/Hillcrest.png/revision/latest?cb=20200725175945'),
+('Hospital de Seattle', 'Base principal da WLF, fortemente fortificada. É um ponto crucial na busca de Abby e na jornada de Ellie por vingança.', 'https://static.wikia.nocookie.net/thelastofus/images/5/58/WLF_Hospital_Seattle.png/revision/latest?cb=20200712125134'),
+('Ilha dos Serafitas', 'Local remoto na costa de Seattle onde os Serafitas vivem, caracterizado por uma sociedade religiosa primitiva e terrenos acidentados.', 'https://static.wikia.nocookie.net/thelastofus/images/8/8c/Seraphite_Island.png/revision/latest?cb=20200711175405'),
+('Aquário de Seattle', 'Antigo ponto turístico que se torna um refúgio e base para Owen, Mel e, temporariamente, Abby.', 'https://static.wikia.nocookie.net/thelastofus/images/e/e8/The_Aquarium.png/revision/latest?cb=20200808160431'),
+('Santa Barbara, Califórnia', 'Cidade costeira controlada pelos Rattlers (Cascavéis), um grupo brutal de escravagistas. É o cenário do confronto final de Ellie.', 'https://static.wikia.nocookie.net/thelastofus/images/c/ca/Santa_Barbara.png/revision/latest?cb=20200711175425'),
+('A Fazenda', 'Lar pacífico de Ellie e Dina, onde tentam construir uma vida normal antes que o passado de Ellie a assombre novamente.', 'https://static.wikia.nocookie.net/thelastofus/images/a/ac/The_Farm_TLOU_Part_II.png/revision/latest?cb=20210217193233');
