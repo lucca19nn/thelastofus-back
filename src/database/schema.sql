@@ -75,20 +75,20 @@ INSERT INTO infectados (nome, descricao, origem, comportamento_tipico, imagem) V
 ('Rat King', 'Mutacao rara: fusao de multiplos infectados em um so corpo', 'Hospitais abandonados com infestacao prolongada', 'Extremamente resistente, multiplos padroes de ataque, comportamento imprevisivel', 'rat-king.png');
 
 INSERT INTO locais (nome, descricao, imagem) VALUES
-('Zona de Quarentena de Boston', 'Area fortificada onde Joel e Tess vivem no inicio do surto, cheia de patrulhas militares e regras rigidas.', 'zona-de-quarentena-de-boston.png'),
-('Capitolio de Boston', 'Edificio iconico e ponto de encontro com Marlene, onde os Vagalumes tinham uma base. O local esta em ruinas e infestado.', 'capitolio-de-boston.png'),
-('Lincoln, Massachusetts', 'Cidade onde Bill vive sozinho, repleta de armadilhas engenhosas e defesas improvisadas contra infectados e saqueadores.', 'lincoln-massachusetts.png'),
-('Pittsburgh, Pensilvania', 'Cidade dominada por cacadores hostis apos a queda da autoridade militar. E um cenario de emboscadas e perigos constantes.', ''),
-('Represa Hidreletrica de Tommy', 'Localizacao no Condado de Jackson onde Tommy e sua comunidade se estabeleceram, gerando energia e vivendo em seguranca.', ''),
-('Universidade do Leste do Colorado', 'Campus abandonado onde Joel e Ellie procuram os Vagalumes. O local se tornou um ninho de infectados e palco de um confronto brutal.', 'universidade-do-leste-do-colorado.png'),
+('Zona de Quarentena de Boston', 'Area fortificada onde Joel e Tess vivem no inicio do surto, cheia de patrulhas militares e regras rigidas.', 'zona-de-quarentena.png'),
+('Capitolio de Boston', 'Edificio iconico e ponto de encontro com Marlene, onde os Vagalumes tinham uma base. O local esta em ruinas e infestado.', 'capitolio.png'),
+('Lincoln, Massachusetts', 'Cidade onde Bill vive sozinho, repleta de armadilhas engenhosas e defesas improvisadas contra infectados e saqueadores.', 'lincoln.png'),
+('Pittsburgh, Pensilvania', 'Cidade dominada por cacadores hostis apos a queda da autoridade militar. E um cenario de emboscadas e perigos constantes.', 'pittsburgh.png'),
+('Represa Hidreletrica de Tommy', 'Localizacao no Condado de Jackson onde Tommy e sua comunidade se estabeleceram, gerando energia e vivendo em seguranca.', 'represa.png'),
+('Universidade do Leste do Colorado', 'Campus abandonado onde Joel e Ellie procuram os Vagalumes. O local se tornou um ninho de infectados e palco de um confronto brutal.', 'universidade-colorado.png'),
 ('Lakeside Resort (Silver Lake)', 'Comunidade liderada pelo canibal David. Um resort de inverno que esconde uma sociedade sombria e perigosa.', 'lakeside-resort.png'),
 ('Salt Lake City, Utah', 'Base final dos Vagalumes, onde se encontra o Hospital Saint Mary. E o climax da jornada de Joel e Ellie no primeiro jogo.', 'salt-lake-city.png'),
 ('Liberty Gardens Mall (Left Behind)', 'Shopping abandonado em Boston explorado por Ellie e Riley na DLC "Left Behind", cheio de memorias e perigos.', 'liberty-gardens-mall.png'),
-('Jackson, Wyoming', 'Comunidade prospera e fortificada liderada por Tommy e Maria, oferecendo um refugio seguro em meio a um mundo pos-apocaliptico.', 'jackson-wyoming.png'),
+('Jackson, Wyoming', 'Comunidade prospera e fortificada liderada por Tommy e Maria, oferecendo um refugio seguro em meio a um mundo pos-apocaliptico.', 'jackson.png'),
 ('Seattle, Washington - Centro', 'Vasta area devastada pela guerra entre a WLF (Frente de Libertacao de Washington) e os Serafitas (Scars), cheia de ruinas e perigos.', 'seattle-centro.png'),
-('Bairro Hillcrest, Seattle', 'Area residencial suburbana em Seattle, com casas, lojas e uma forte presenca de infectados e patrulhas da WLF.', 'bairro-hillcrest.png'),
+('Bairro Hillcrest, Seattle', 'Area residencial suburbana em Seattle, com casas, lojas e uma forte presenca de infectados e patrulhas da WLF.', 'hillcrest.png'),
 ('Hospital de Seattle', 'Base principal da WLF, fortemente fortificada. E um ponto crucial na busca de Abby e na jornada de Ellie por vinganca.', 'hospital-de-seattle.png'),
 ('Ilha dos Serafitas', 'Local remoto na costa de Seattle onde os Serafitas vivem, caracterizado por uma sociedade religiosa primitiva e terrenos acidentados.', 'ilha-dos-serafitas.png'),
-('Aquario de Seattle', 'Antigo ponto turistico que se torna um refugio e base para Owen, Mel e, temporariamente, Abby.', 'aquario-de-seattle.png'),
+('Aquario de Seattle', 'Antigo ponto turistico que se torna um refugio e base para Owen, Mel e, temporariamente, Abby.', 'aquario.png'),
 ('Santa Barbara, California', 'Cidade costeira controlada pelos Rattlers (Cascaveis), um grupo brutal de escravagistas. E o cenario do confronto final de Ellie.', 'santa-barbara.png'),
-('A Fazenda', 'Lar pacifico de Ellie e Dina, onde tentam construir uma vida normal antes que o passado de Ellie a assombre novamente.', 'a-fazenda.png');
+('A Fazenda', 'Lar pacifico de Ellie e Dina, onde tentam construir uma vida normal antes que o passado de Ellie a assombre novamente.', 'fazenda.png');

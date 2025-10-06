@@ -33,8 +33,6 @@ const createInfectados = async (req, res) => {
         const newInfectado = await infectadosModel.createInfectados(infectado);
         res.status(201).json(newInfectado);
     } catch (error) {
-        // >>> ESTA LINHA É ESSENCIAL PARA DESCOBRIR O ERRO REAL <<<
-        console.error("ERRO DETALHADO AO CRIAR INFECTADO:", error); 
         
         res.status(500).json({ error: 'Erro ao criar infectado' });
     }
