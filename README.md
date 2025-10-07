@@ -67,8 +67,18 @@ Antes de iniciar o servidor, é crucial configurar o banco de dados PostgreSQL.
     ```sh
     \c thelastofus
     ```
+4.  **Crie um arquivo .env**
+     ```sh
+     PORT=3000
+     DB_USER=postgres
+     DB_HOST=localhost
+     DB_NAME=thelastofus
+     DB_PASSWORD=senha-do-seu-sql
+     DB_PORT=7777 ou 7007
 
-4.  **Crie as tabelas necessárias.** Copie e cole os seguintes comandos no seu terminal `psql`:
+    ```
+
+5.  **Crie as tabelas necessárias.** Copie e cole os seguintes comandos no seu terminal `psql`:
 
     **Tabela de Personagens Principais:**
     ```sql
@@ -118,7 +128,7 @@ Antes de iniciar o servidor, é crucial configurar o banco de dados PostgreSQL.
     );
     ```
 
-5.  **Insira os dados iniciais nas tabelas.** Copie e cole os seguintes comandos `INSERT` para popular o banco de dados:
+6.  **Insira os dados iniciais nas tabelas.** Copie e cole os seguintes comandos `INSERT` para popular o banco de dados:
 
     **Dados dos Personagens Principais:**
     ```sql
