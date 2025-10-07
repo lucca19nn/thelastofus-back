@@ -1,6 +1,6 @@
 # The Last of Us - Backend API
 
-![The Last of Us Banner](https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/jGHfI4tV2e3N34Rk8n4q3m1s.jpg)
+![The Last of Us Banner]([https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/jGHfI4tV2e3N34Rk8n4q3m1s.jpg](https://th.bing.com/th/id/R.8f541d5709e3a77a3bacb2b43f173a94?rik=3kSV3O0qRXQPpg&riu=http%3a%2f%2fwww.capsulecomputers.com.au%2fwp-content%2fuploads%2f2013%2f04%2flast-of-us-banner-01-e1368427338703.png&ehk=zK8LkMVngVoRgEFwOJ6RHpUeEp5rBxNMmmP1vEysa6U%3d&risl=&pid=ImgRaw&r=0))
 
 Bem-vindo ao repositório do backend do projeto The Last of Us. Esta API foi desenvolvida para servir como uma fonte de dados sobre o universo dos jogos **The Last of Us Part I** e **Part II**, fornecendo informações detalhadas sobre personagens, infectados e locais icônicos da franquia.
 
