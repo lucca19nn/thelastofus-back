@@ -156,13 +156,14 @@ Antes de iniciar o servidor, é crucial configurar o banco de dados PostgreSQL.
     ('Owen Moore', 'Membro da WLF', 'Morto', 'Salt Lake City (ex-Vagalume)', 'Soldado idealista e ex-namorado de Abby, parte central de seu grupo de amigos', 'owen.png'),
     ('Mel', 'Membro da WLF', 'Morta', 'Salt Lake City (ex-Vagalume)', 'Medica da WLF e parceira de Owen, estava gravida durante os eventos em Seattle', 'mel.png'),
     ('Manny Alvarez', 'Membro da WLF', 'Morto', 'Salt Lake City (ex-Vagalume)', 'Soldado leal e melhor amigo de Abby, servindo como seu braco direito na WLF', 'manny.png'),
+    ('Jordan', 'Antagonista', 'Morto', 'Seattle (WLF)', 'Membro da WLF e amigo de Abby, que participou na morte de Joel. Torna-se um dos alvos da vingança de Ellie, sendo o     primeiro do grupo a ser morto por ela.', 'jordan.png'),
     ('Yara', 'Aliada', 'Morta', 'Ilha dos Serafitas', 'Irma mais velha de Lev, uma serafita exilada que se alia a Abby para proteger seu irmao', 'yara.png'),
     ('Isaac Dixon', 'Lider da WLF', 'Morto', 'Seattle, Washington', 'Lider implacavel da Frente de Libertacao de Washington (WLF) em guerra com os Serafitas', 'isaac.png'),
-    ('Frank', 'Parceiro de Bill', 'Morto', 'Lincoln, Massachusetts', 'Parceiro de Bill por muitos anos, cuja nota de suicidio revela a profundidade de sua relacao', 'frank.png'),
-    ('Riley Abel', 'Amiga de Ellie', 'Morta', 'Zona de Quarentena de Boston', 'Melhor amiga de Ellie e seu primeiro interesse amoroso, cuja morte revela a imunidade de Ellie (DLC Left Behind)', 'riley.png'),
+    ('Frank', 'Parceiro de Bill', 'Morto', 'Lincoln, Massachusetts', 'Parceiro de Bill por muitos anos, cuja nota de suicidio revela a profundidade de sua relacao', '           frank.png'),
+    ('Riley Abel', 'Amiga de Ellie', 'Morta', 'Zona de Quarentena de Boston', 'Melhor amiga de Ellie e seu primeiro interesse amoroso, cuja morte revela a imunidade de           Ellie (DLC Left Behind)', 'riley.png'),
     ('Sarah Miller', 'Filha de Joel', 'Morta', 'Austin, Texas', 'Filha de Joel, cuja morte no inicio do surto moldou profundamente sua personalidade', 'sarah.png'),
-    ('Nora Harris', 'Membro da WLF', 'Morta', 'Salt Lake City (ex-Vagalume)', 'Medica e amiga de Abby, interrogada por Ellie em um momento crucial da busca por vinganca', 'nora.png'),
-    ('Jerry Anderson', 'Cirurgiao dos Vagalumes', 'Morto', 'Salt Lake City, Utah', 'Pai de Abby e o cirurgiao chefe dos Vagalumes que foi morto por Joel ao tentar criar uma cura a partir da imunidade de Ellie', 'jerry.png');
+    ('Nora Harris', 'Membro da WLF', 'Morta', 'Salt Lake City (ex-Vagalume)', 'Medica e amiga de Abby, interrogada por Ellie em um momento crucial da busca por vinganca', '     nora.png'),
+    ('Jerry Anderson', 'Cirurgiao dos Vagalumes', 'Morto', 'Salt Lake City, Utah', 'Pai de Abby e o cirurgiao chefe dos Vagalumes que foi morto por Joel ao tentar criar uma     cura a partir da imunidade de Ellie', 'jerry.png');
     ```
 
     **Dados dos Infectados:**
