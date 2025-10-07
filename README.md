@@ -1,7 +1,5 @@
 # The Last of Us - Backend API
 
-![The Last of Us Banner](https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/jGHfI4tV2e3N34Rk8n4q3m1s.jpg)
-
 Bem-vindo ao repositório do backend do projeto The Last of Us. Esta API foi desenvolvida para servir como uma fonte de dados sobre o universo dos jogos **The Last of Us Part I** e **Part II**, fornecendo informações detalhadas sobre personagens, infectados e locais icônicos da franquia.
 
 ## 📜 Sobre o Projeto
@@ -197,3 +195,22 @@ Após configurar o banco de dados e instalar as dependências, você pode inicia
 Execute o seguinte comando no terminal:
 ```sh
 npm run dev
+
+---
+
+## 📄 Endpoints da API
+
+A API fornece os seguintes endpoints para acessar os dados do universo de The Last of Us.
+
+| Método | Endpoint                  | Descrição                                                 |
+| :----- | :------------------------ | :-------------------------------------------------------- |
+| `GET`  | `/api/principais`         | Retorna uma lista de todos os personagens principais.       |
+| `GET`  | `/api/principais/:id`     | Retorna um personagem principal específico pelo seu ID.     |
+| `GET`  | `/api/secundarios`        | Retorna uma lista de todos os personagens secundários.      |
+| `GET`  | `/api/secundarios/:id`    | Retorna um personagem secundário específico pelo seu ID.    |
+| `GET`  | `/api/infectados`         | Retorna uma lista de todos os tipos de infectados.          |
+| `GET`  | `/api/infectados/:id`     | Retorna um tipo de infectado específico pelo seu ID.        |
+| `GET`  | `/api/locais`             | Retorna uma lista de todos os locais do jogo.               |
+| `GET`  | `/api/locais/:id`         | Retorna um local específico pelo seu ID.                    |
+
+---
